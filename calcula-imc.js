@@ -2,14 +2,13 @@
 var tdPeso = document.getElementById("peso-2");
 var tdAltura = document.getElementById("altura-2");
 
-var peso = tdPeso.textContent;
-var altura = tdAltura.textContent;
+var paciente = {peso: tdPeso.textContent, altura: tdAltura.textContent};
 
-if(altura != 0) {
-    var imc = peso / (altura * altura);
+if(paciente.altura != 0) {
+    var imc = paciente.peso / (paciente.altura * paciente.altura);
     var tdImc = document.getElementById("imc-2");
     tdImc.textContent = imc;
-    
+
     console.log(imc);
 }
 else{
