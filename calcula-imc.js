@@ -7,6 +7,9 @@ var altura = tdAltura.textContent;
 
 if(altura != 0) {
     var imc = peso / (altura * altura);
+    var tdImc = document.getElementById("imc-2");
+    tdImc.textContent = imc;
+    
     console.log(imc);
 }
 else{
