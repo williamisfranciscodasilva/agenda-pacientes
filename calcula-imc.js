@@ -2,8 +2,7 @@
 
 var trsPacientes = document.getElementsByClassName("paciente");
 
-var posicaoAtual = 0;
-while(posicaoAtual <= trsPacientes.length == 1){
+for(posicaoAtual = 0; posicaoAtual <= trsPacientes.length == 1; posicaoAtual++){
 
     var pacienteTr = trsPacientes[posicaoAtual];
     
@@ -24,5 +23,4 @@ if(paciente.altura != 0) {
 else{
     console.log("Não posso dividir");
 }
-    posicaoAtual++;
 }
