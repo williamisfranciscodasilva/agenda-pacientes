@@ -1,5 +1,3 @@
-//IMC = peso dividido por altura ao quadrado, ou seja, peso / (altura*altura)
-
 var trsPacientes = document.getElementsByClassName("paciente");//array de trs
 
 percorreArray(trsPacientes, function(pacienteTr){
@@ -20,11 +18,10 @@ percorreArray(trsPacientes, function(pacienteTr){
                                 console.log("Não posso dividir");
                             }
                          }};
-
-    var imc = pacienteAtual.pegaImc(pacienteAtual);
-
-    var tdImc = pacienteTr.getElementsByClassName("info-imc")[0];
-    tdImc.textContent = imc;
-
-    console.log(imc);
+    
+    console.log(pacienteAtual.nome);
 });
+
+
+    
+    
